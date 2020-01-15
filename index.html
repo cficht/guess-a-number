@@ -6,10 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Guessing Game</title>
 </head>
-
 <body>
+    <header>
+        <h1>Guessing Game</h1>
+        <p>These are the rules.</p>
+    </header>
+    <main>
+        <div>
+            <label>Number:</label>
+            <input type="number" id="number-input" min="0" max="20">
+            <button id="submit-button">Guess!</button>
+        </div>
+        <div>
+            <p>Tries remaining: <span id="tries-remaining">0</span></p>
+            <p>Current guess: <span id="high-low">Too high!</span></p>
+        </div>
+        <div>
+            <h2 id="win-lose">YOU LOSE!</h2>
+        </div>
+    </main>
 
     <script type="module" src="app.js"></script>
 </body>
