@@ -50,3 +50,51 @@ test('guess is same as the correct number', function(assert) {
     // Make assertions about what is expected valid result
     assert.equal(runningCompare, 0);
 });
+
+test('guess is not a number', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const guess = 'Words';
+    const correctNum = 5;
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+
+    const runningCompare = compareNumbers(guess, correctNum);
+
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.notEqual(runningCompare, 0 || 1 || -1);
+});
+
+test('guess is a negative number', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const guess = -2;
+    const correctNum = 5;
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+
+    const runningCompare = compareNumbers(guess, correctNum);
+
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.notEqual(runningCompare, 0 || 1 || -1);
+});
+
+test('guess is more than 20', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const guess = 22;
+    const correctNum = 5;
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+
+    const runningCompare = compareNumbers(guess, correctNum);
+
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.notEqual(runningCompare, 0 || 1 || -1);
+});
