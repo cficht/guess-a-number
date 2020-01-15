@@ -6,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech|Share+Tech+Mono&display=swap" rel="stylesheet">
     <title>Guessing Game</title>
 </head>
 <body>
     <header>
-        <h1>Guessing Game</h1>
-        <p>These are the rules.</p>
+        <h1>Guessing Game!</h1>
+        <p>Guess the number in 4 tries!</p>
     </header>
     <main>
-        <div>
+        <div class="number-box">
             <label>Number:</label>
             <input type="number" id="number-input" min="0" max="20">
+            <br>
+            <br>
             <button id="submit-button">Guess!</button>
         </div>
-        <div>
+        <div class="number-box">
             <p>Tries remaining: <span id="tries-remaining">4</span></p>
             <p>Current guess: <span id="high-low"></span></p>
         </div>
-        <div>
-            <h2 id="win-lose"></h2>
+        <div id="result-box">
+            <h1 id="win-lose"></h1>
         </div>
     </main>
 

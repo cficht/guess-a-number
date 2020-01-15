@@ -21,17 +21,15 @@ submitButton.addEventListener('click', () => {
         triesCount--;
         highLow.textContent = 'Too low, bro!';
     } else {
-        winLose.textContent = 'YOOOOOOU WIN!';
+        winLose.textContent = 'YOOOOOOU WIN!!!';
         highLow.textContent = 'The right stuff!';
         submitButton.disabled = true;
-        return;
     }
 
     triesRemaining.textContent = triesCount;
 
     if (triesCount <= 0) {
-        winLose.textContent = 'YOOOOU LOSE';
+        winLose.textContent = 'YOOOOU LOSE!!!';
         submitButton.disabled = true;
-        return;
     }
 });
